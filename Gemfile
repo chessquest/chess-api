@@ -8,6 +8,7 @@ gem 'rake'
 gem 'fast_jsonapi'
 gem 'bundler'
 
+
 group :development, :test do
   gem 'rspec'
   gem 'pry'
