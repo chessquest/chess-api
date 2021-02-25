@@ -5,6 +5,6 @@ script:
 - rake
 deploy:
   provider: heroku
-  app: chess-api
+  app: chess-quest-api
   on:
     branch: main
