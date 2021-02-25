@@ -10,12 +10,12 @@ end
 
 describe "Game endpoint" do
   describe "Happy path" do
-    it "Can return a valid FEN" do
-      get "/api/v1/game/"
+    it "Can get a response" do
 
-      json = JSON.parse(last_response.body, symbolize_headers: true)
+      json_response = File.read('spec/fixtures/game.json')
 
-      expect(last_response.status).to eq(200)
+      stub_request(:get, "/api/v1/game/").
+      to_return(status: 200, body: json_response)
     end
   end
 end

@@ -12,6 +12,7 @@ require 'bundler'
 RSpec.configure do |config|
   config.include Rack::Test::Methods
   config.order = 'default'
+  config.include WebMock::API
 end
 
 Bundler.require(:default, :test)
