@@ -36,6 +36,6 @@ describe 'it can hit the api/v1/game end point' do
     expect(response[:data][:attributes][:white][:@id]).to be_a(String)
     expect(response[:data][:attributes][:black][:username]).to be_a(String)
     expect(response[:data][:attributes][:white][:username]).to be_a(String)
-
+    
    end
 end
