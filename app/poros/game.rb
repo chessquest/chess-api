@@ -8,7 +8,7 @@ class Game
     @fen = data[:fen]
     @white = data[:white]
     @black = data[:black]
-    @id = nil
+    @id = data[:url]
   end
 
 end
