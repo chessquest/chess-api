@@ -2,7 +2,7 @@ language: ruby
 rbenv:
 - 2.5.3
 script:
-- rake
+- bundle exec rake
 deploy:
   provider: heroku
   app: chess-quest-api
