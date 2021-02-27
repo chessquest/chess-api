@@ -16,7 +16,7 @@ end
 
 group :test do
   gem 'simplecov'
-  gem 'webmock'
-  gem 'vcr'
+  # gem 'webmock'
+  # gem 'vcr'
   gem 'rack-test'
 end

@@ -3,8 +3,8 @@ require './config/environment'
 require 'simplecov'
 SimpleCov.start
 
-require 'webmock/rspec'
-require 'vcr'
+# require 'webmock/rspec'
+# require 'vcr'
 require 'rack'
 
 require 'bundler'
@@ -12,7 +12,7 @@ require 'bundler'
 RSpec.configure do |config|
   config.include Rack::Test::Methods
   config.order = 'default'
-  config.include WebMock::API
+  # config.include WebMock::API
 end
 
 Bundler.require(:default, :test)
