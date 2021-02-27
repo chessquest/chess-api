@@ -10,7 +10,7 @@ end
 
 describe "Game endpoint" do
   describe "Happy path" do
-    it "Can get a response" do
+    xit "Can get a response" do
 
       json_response = File.read('spec/fixtures/game.json')
 
