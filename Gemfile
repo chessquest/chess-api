@@ -8,6 +8,7 @@ gem 'rake'
 gem 'fast_jsonapi'
 gem 'bundler'
 gem 'rspec'
+gem 'require_all'
 
 
 group :development, :test do
@@ -16,7 +17,6 @@ end
 
 group :test do
   gem 'simplecov'
-  # gem 'webmock'
   # gem 'vcr'
   gem 'rack-test'
 end

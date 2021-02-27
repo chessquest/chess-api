@@ -1,6 +1,3 @@
-require './app/controllers/games_controller'
-require './app/facades/games_facade'
-
 class GamesService
   class << self
     def conn
