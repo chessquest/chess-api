@@ -7,10 +7,10 @@ gem 'rack'
 gem 'rake'
 gem 'fast_jsonapi'
 gem 'bundler'
+gem 'rspec'
 
 
 group :development, :test do
-  gem 'rspec'
   gem 'pry'
 end
 
