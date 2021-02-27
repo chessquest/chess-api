@@ -5,6 +5,10 @@ script:
 - bundle exec rake
 deploy:
   provider: heroku
-  app: chess-quest-api
+  api_key:
+    secure: LcCjvtDEGT4S0zvBUw9gHOe8Zm8uV637+A1csOSYD8sQQhrmYkXYystCJ8VxGSdaZnIdjebf318fcKFy4VfW3eYANgWnPbVyFX/7t3hSbos756yLnj8tq+v2jfyWcCtOmoNcZhnfQbJHLty0yTJ6gVeWSTIfWfohkl8cUXUYRPYOO3iiDn6/8misANB2cv0e4c9mSXaqgTvyuv4A9ZNuD/+sWndugevMj3cltjkne0lj3uQSpzn5kZDK8BjRbdZsVvK0oxjk4FbcaiLzyKZGh22Aor/aD1LbpYVsTzwXHx5ZTDBaIFcAoX/MA6eaaQ9sBlq9p7k2X9yQnRMzk4isB7VBTRcWD6vkeZRkloETy4ok2YXnLXoef3PLV0VqxnMoLxMr9zaLZUM4Zc0L5HqXJIDSLr/FcoOcPc/1UaXwgsVt8ANoxquLLXDEcYQ0V7XXte97/I0bXSLFypB2ydOemW7u0NrXcalJvwfag6ZjzkfzzKhd7JK4ffsoLrzNBBfm2QeFs3gJfwNHiBgrTaj7JACTDflvj79wV1NB+iJHUJ9Khr0SIi5NgUZzNKSLrIQY9veLMSFE/GK7Qhhj9LNnsuFGSY7zjcdF5oWhrmvmt17asKXUvk3T5Xwa3NkgfEJICmzGq77S5KDcbVs36XFdAjBPUO8U+UMU+E2wjzE2xCI=
+  app: chess-com-api
   on:
+    repo: chessquest/chess-api
     branch: main
+  skip_cleanup: 'true'
